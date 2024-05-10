@@ -1,0 +1,8 @@
+Fists
+1 Brass Knuckles
+2 Karate
+3 Sword
+4 Gun
+8 Knife
+3 Autocannon
+50
