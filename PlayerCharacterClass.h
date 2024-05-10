@@ -555,7 +555,10 @@ public:
 		maxHealth = maxHealth + 1;
 		int choice;
 		level = level + 1;
-		listAbilities.displayAndGetAbility(race, level, choice);
+		if(level < 11)
+		{
+			listAbilities.displayAndGetAbility(race, level, choice);
+		}
 		addAbility(choice, listAbilities);
 	}
 
