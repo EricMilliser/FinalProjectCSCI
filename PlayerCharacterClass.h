@@ -376,7 +376,7 @@ public:
 			counter++;
 		}
 		choice = getValidInt("Make your choice: ", 1, (weapons.size()));
-		choice = choice - 1;
+		choice = (choice - 1);
 		ghoul.setHealth(ghoul.takeDamage(weapons[choice]));
 		std::cout << "You hit the ghoul! Health remaining:" << ghoul.toStringHealth() << std::endl;
 		
@@ -396,7 +396,7 @@ public:
 			counter++;
 		}
 		choice = getValidInt("Make your choice: ", 1, powers.size());
-		choice = choice - 1;
+		choice = (choice - 1);
 		ghoul.setHealth(ghoul.takeDamageAbility(powers[choice]));
 		std::cout << "You hit the ghoul! Health remaining:" << ghoul.toStringHealth() << std::endl;
 
@@ -419,7 +419,7 @@ public:
 			counter++;
 		}
 		choice = getValidInt("Make your choice: ", 1, weapons.size());
-		choice = choice - 1;
+		choice = (choice - 1);
 		ghoul.setHealth(ghoul.takeDamage(weapons[choice]));
 		std::cout << "You hit the ghoul!"  << ghoul.toStringHealth() << std::endl;
 
@@ -438,7 +438,7 @@ public:
 			counter++;
 		}
 		choice = getValidInt("Make your choice: ", 1, powers.size());
-		choice = choice - 1;
+		choice = (choice - 1);
 		ghoul.setHealth(ghoul.takeDamageAbility(powers[choice]));;
 		std::cout << "You hit the George!" << ghoul.toStringHealth() << std::endl;
 
